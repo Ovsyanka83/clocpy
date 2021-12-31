@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "clocpy"
+version = "0.1.0"
+description = "Count lines of code but implemented in Python"
+authors = ["Stanislav Zmiev <szmiev2000@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.6.2"
+click = "^8.0.3"
+rich = "^10.16.1"
+dataclasses = { version = "^0.8", python = "<3.7" }
+typing-extensions = "^4.0.1"
+
+[tool.poetry.dev-dependencies]
+black = "^21.12b0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
